@@ -1,0 +1,8 @@
+<form (submit)="onSubmit(taskInput, $event)" class="my-custom-form">
+  <div class="input-group">
+    <input type="text" class="form-control" #taskInput placeholder="Enter a task">
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-primary" style="color: white; background-color: #4CAF50;">Add Task</button>
+    </div>
+  </div>
+</form>
