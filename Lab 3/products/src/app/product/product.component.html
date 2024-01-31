@@ -1,0 +1,16 @@
+<div class="card h-100 position-relative product-card" (click)="viewProduct()">
+  @if(productItem.stock > 0) {
+      <span class="badge badge-success position-absolute stock-badge">In Stock</span>
+  } @else {
+      <span class="badge badge-danger position-absolute stock-badge">Out of Stock</span>
+  }
+  <img [src]="productItem.thumbnail" class="card-img-top" alt="Product Image">
+  <div class="card-body">
+      <div class="product-title">
+          <h5 class="card-title product-name">{{ productItem.title }}</h5>
+          <h5 class="product-price">${{ productItem.price }}</h5>
+      </div>
+      <p class="card-text product-description">{{ productItem.description }}</p>
+      <button class="btn btn-primary btn-add-to-cart">Add to Cart</button>
+  </div>
+</div>

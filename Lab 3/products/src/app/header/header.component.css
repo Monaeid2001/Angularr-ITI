@@ -1,0 +1,15 @@
+.active-home {
+    color: navy; /* Change to navy */
+    font-weight: bold;
+}
+
+.active_link {
+    color: #ff6347; /* Change to tomato */
+    font-weight: bold;
+}
+
+i {
+    padding-top: 15px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
